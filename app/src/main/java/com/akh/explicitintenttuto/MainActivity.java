@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @Override
+    /*@Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 1 && requestCode == 1){
@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
 
             txtShowText.setText("Name :" +name+"\n Email : "+email+"\n phone : "+ phone +"\n age : "+age + "\n gender : "+ gender);
         }
-    }
+    }*/
 
-    /* @Override
+     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 1 && requestCode == 1){
@@ -52,5 +52,5 @@ public class MainActivity extends AppCompatActivity {
             String gender=user.getGender();
             txtShowText.setText("Name :"+name+"\n Email: "+email+"\n phone: "+phone+"\n age: "+ age+"\n gender: "+gender);
         }
-    }*/
+    }
 }

@@ -40,11 +40,14 @@ public class UserInfoActivity extends AppCompatActivity {
             gender = "Female";
         }
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        intent.putExtra("name",name);
+        /*intent.putExtra("name",name);
         intent.putExtra("email", email);
         intent.putExtra( "phone", phone);
         intent.putExtra("age",age);
         intent.putExtra("gender",gender);
+        setResult(1,intent);*/
+        User user = new User(name,email,phone,gender,age);
+        intent.putExtra("obj",user);
         setResult(1,intent);
         finish();
 
